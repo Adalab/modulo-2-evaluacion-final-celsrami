@@ -1,0 +1,16 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@import "core/variables";
+@import "core/reset";
+@import "core/mixins";
+@import "core/animations";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "pages/index";
