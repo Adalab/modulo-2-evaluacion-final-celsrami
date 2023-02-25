@@ -1,14 +1,21 @@
 <main class="main">
+  <section class="hero"></section>
   <section class="search">
-    <h2 class="search__title">Buscador de Cócteles</h2>
-    <form>
+    <form class="search__form">
+      <label class="search__title" for="search"
+        >Do you want to look for a cocktail?</label
+      >
+
       <input
-        class="search__title__input js-input"
+        class="search__input js-input"
         type="text"
         placeholder="search cocktail"
+        id="search"
       />
-      <button class="search__title__btn js-search">Buscar</button>
-      <button class="search__title__btn">Reset</button>
+      <div>
+        <button class="search__btn js-search">Buscar</button>
+        <button class="search__btn">Reset</button>
+      </div>
     </form>
   </section>
 

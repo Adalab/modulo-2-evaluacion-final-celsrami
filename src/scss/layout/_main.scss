@@ -1,3 +1,58 @@
+.hero {
+  height: 30vh;
+  background-color: aqua;
+  // background-image: url("https://okdiario.com/img/2020/06/27/cocteles-655x368.jpg");
+  background-image: url("https://media.gq.com.mx/photos/603e541494037dd0571a3f8b/master/pass/COCTELES.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.search {
+  height: 20vh;
+  background-color: rgb(247, 237, 244);
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    color: rgb(212, 76, 99);
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  &__input {
+    text-align: center;
+    border-style: none;
+    height: 2rem;
+    width: 50vh;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  &__input::placeholder {
+    color: rgb(241, 215, 234);
+  }
+
+  &__btn {
+    border-style: none;
+    background-color: rgb(212, 76, 99);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 10rem;
+    margin: 0.5rem;
+  }
+}
+
 .cocktail {
   display: flex;
   justify-content: space-around;
@@ -6,6 +61,7 @@
 
 .img {
   height: 10rem;
+  border-radius: 50%;
 }
 
 .color {

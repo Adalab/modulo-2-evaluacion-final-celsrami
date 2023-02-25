@@ -1,2 +1,13 @@
 .header {
+  height: 5rem;
+  background-color: rgb(247, 237, 244);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 1.8rem;
+    color: rgb(212, 76, 99);
+  }
 }
