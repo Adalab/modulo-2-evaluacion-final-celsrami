@@ -1,5 +1,5 @@
+/* eslint-disable quotes */
 "use strict";
-console.log("holi");
 
 const btnSearch = document.querySelector(".js-search");
 const input = document.querySelector(".js-input");
@@ -66,8 +66,9 @@ function renderList(cockails) {
         "https://via.placeholder.com/210x295/ffffff/666666/?text=TV"
       );
     }
-
-    imgElement.setAttribute("class", "img");
+    titleElement.setAttribute("class", "titlecocktails");
+    imgElement.setAttribute("class", "imgcocktails");
+    liElement.setAttribute("class", "listcoktails ");
     liElement.setAttribute("id", `${list.id}`);
     // liElement.setAttribute("class", "color");
 
@@ -98,8 +99,9 @@ function renderListFavorite(cockails) {
         "https://via.placeholder.com/210x295/ffffff/666666/?text=TV"
       );
     }
-
-    imgElement.setAttribute("class", "img");
+    titleElement.setAttribute("class", "titlecocktails");
+    imgElement.setAttribute("class", "imgcocktails");
+    liElement.setAttribute("class", "listcoktails ");
     liElement.setAttribute("id", `${list.id}`);
 
     titleElement.appendChild(titleContent);
@@ -122,7 +124,7 @@ function listLocalStore() {
 listLocalStore();
 
 function handleClickList(ev) {
-  console.log(cockailsFavorite);
+  // console.log(cockailsFavorite);
   ev.preventDefault();
   const idContent = ev.currentTarget.id;
 
