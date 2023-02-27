@@ -1,5 +1,5 @@
 .hero {
-  height: 30vh;
+  height: 35vh;
   background-color: aqua;
   // background-image: url("https://okdiario.com/img/2020/06/27/cocteles-655x368.jpg");
   background-image: url("https://media.gq.com.mx/photos/603e541494037dd0571a3f8b/master/pass/COCTELES.jpg");
@@ -22,7 +22,7 @@
 
   &__title {
     font-size: 1.4rem;
-    color: rgb(212, 76, 99);
+    color: $color-pink;
     margin-bottom: 1rem;
     cursor: pointer;
   }
@@ -31,7 +31,7 @@
     text-align: center;
     border-style: none;
     height: 2rem;
-    width: 50vh;
+    width: 30rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
     cursor: pointer;
@@ -44,14 +44,14 @@
 
   &__btn {
     border-style: none;
-    background-color: rgb(212, 76, 99);
+    background-color: $color-pink;
     color: white;
     border-radius: 1rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
     width: 10rem;
     margin: 0.5rem;
-    box-shadow: 0 1px 5px 0 rgb(212, 76, 99), 0 1px 3px 0 rgba(22, 3, 3, 0.877);
+    box-shadow: 0 1px 5px 0 $color-pink, 0 1px 3px 0 rgba(22, 3, 3, 0.877);
   }
 }
 
@@ -69,9 +69,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 3px solid rgb(241, 215, 234);
+    border: 3px solid $color-pink;
+    margin-top: 20px;
     border-radius: 2rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
+    padding-bottom: 30px;
 
     &__ul {
       display: flex;
@@ -87,70 +89,92 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 3px solid rgb(241, 215, 234);
+    margin-top: 20px;
+    border: 3px solid $color-pink;
     border-radius: 2rem;
+    width: 220px;
+    box-shadow: 0 1px 5px 0 $color-pink;
+    padding-bottom: 30px;
   }
   &__title {
     margin-top: 1rem;
     font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: rgb(212, 76, 99);
-    padding-bottom: 1rem;
-    // border-bottom: dotted 2px rgb(212, 76, 99);
+    color: $color-pink;
   }
   &__titlefavorite {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-    width: 10rem;
-    padding-bottom: 1rem;
-    height: 5rem;
-    background-color: rgb(212, 76, 99);
-    transform: translate(0, -30px);
+    background-color: $color-pink;
+    transform: translate(0, -50px);
+    padding: 5px 0;
+    width: 12rem;
+    height: 7.5rem;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -25px;
+    margin-bottom: -55px;
+    box-shadow: 0 1px 5px 0 $color-pink, 0 1px 10px 0 rgba(94, 211, 100, 0.877);
   }
 }
 
 .listcoktails {
-  //background-color: aqua;
   height: 100px;
   width: 15vw;
-  margin: 1rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  // border: 2px solid rgb(212, 76, 99);
-  // border-radius: 1rem;
+  margin: 0 1rem 5rem 1rem;
 }
 
 .imgcocktails {
-  width: 20vw;
+  width: 110px;
   border-radius: 50%;
-  box-shadow: 0 1px 5px 0 rgb(212, 76, 99), 0 1px 3px 0 rgba(22, 3, 3, 0.877);
+  box-shadow: 0 1px 10px 0 $color-pink, 0 1px 20px 0 rgba(22, 3, 3, 0.877);
   cursor: pointer;
 }
 
 .titlecocktails {
+  margin-top: 10px;
   font-size: 1.2rem;
-  transform: translate(0, +10px);
-  border-radius: 2rem;
+  font-weight: 700;
+  transform: translate(0, 15px);
   padding: 1rem;
-  width: 7rem;
+  width: 10rem;
   border-radius: 2rem;
-  background-color: rgb(212, 76, 99);
+  background-color: rgb(241, 215, 234);
+  border: 0.5px solid $color-pink;
   opacity: 0.8;
-  color: white;
+  color: $color-pink;
 }
 
 .color {
-  color: rgb(212, 76, 99);
-  background-color: rgb(241, 215, 234);
+  color: white;
+  background-color: $color-pink;
+  box-shadow: 0 1px 10px 0 rgba(94, 211, 100, 0.877);
+  border: 0.5px solid $color-pink;
+  opacity: 0.9;
+}
+
+.delete-x {
+  background-color: $color-pink;
+  font-size: 14px;
+  padding: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  border-radius: 50%;
+  transform: translate(50px, -30px);
+  border: 0.5px solid white;
+  color: white;
+  cursor: pointer;
 }
