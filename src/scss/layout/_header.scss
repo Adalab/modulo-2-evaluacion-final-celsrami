@@ -1,13 +1,17 @@
 .header {
   height: 5rem;
-  background-color: rgb(247, 237, 244);
+  // background-color: rgb(247, 237, 244);
+  background-color: $color-pink;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.8;
+  position: absolute;
+  width: 100vw;
 
   &__title {
     font-size: 1.8rem;
-    color: rgb(212, 76, 99);
+    color: rgb(247, 237, 244);
   }
 }
