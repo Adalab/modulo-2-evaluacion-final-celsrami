@@ -79,6 +79,9 @@ function renderList(cockails) {
     liElement.setAttribute("class", "listcoktails ");
     liElement.setAttribute("id", `${list.id}`);
 
+    imgElement.setAttribute("alt", "cocktail image");
+    imgElement.setAttribute("title", "select cocktail");
+
     titleElement.appendChild(titleContent);
 
     liElement.append(titleElement, imgElement);
@@ -118,7 +121,7 @@ function renderListFavorite(cockails) {
         "https://via.placeholder.com/210x295/ffffff/666666/?text=TV"
       );
     }
-    deleteElement.setAttribute("class", "fa-solid fa-trash delete-x");
+    deleteElement.setAttribute("class", "fa-regular fa-star delete-x");
     titleElement.setAttribute("class", "titlecocktails");
     imgElement.setAttribute("class", "imgcocktails");
     liElement.setAttribute("class", "listcoktails ");
@@ -126,6 +129,9 @@ function renderListFavorite(cockails) {
     // deleteElement.setAttribute("class", "");
 
     deleteElement.setAttribute("id", `${list.id}`);
+
+    imgElement.setAttribute("alt", "favorite cocktail image");
+    imgElement.setAttribute("title", "favorite cocktail");
 
     titleElement.appendChild(titleContent);
     // deleteElement.appendChild(deleteConctent);
