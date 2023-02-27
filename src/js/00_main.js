@@ -112,7 +112,6 @@ function renderListFavorite(cockails) {
     const deleteElement = document.createElement("i");
 
     const titleContent = document.createTextNode(`${list.name}`);
-    // const deleteConctent = document.createTextNode("X");
     if (list.img) {
       imgElement.setAttribute("src", `${list.img}`);
     } else {
@@ -125,8 +124,6 @@ function renderListFavorite(cockails) {
     titleElement.setAttribute("class", "titlecocktails");
     imgElement.setAttribute("class", "imgcocktails");
     liElement.setAttribute("class", "listcoktails ");
-    // liElement.setAttribute("id", `${list.id}`);
-    // deleteElement.setAttribute("class", "");
 
     deleteElement.setAttribute("id", `${list.id}`);
 
@@ -134,7 +131,7 @@ function renderListFavorite(cockails) {
     imgElement.setAttribute("title", "favorite cocktail");
 
     titleElement.appendChild(titleContent);
-    // deleteElement.appendChild(deleteConctent);
+
     deleteElement.addEventListener("click", handleClickFavorite);
 
     liElement.append(titleElement, imgElement, deleteElement);
