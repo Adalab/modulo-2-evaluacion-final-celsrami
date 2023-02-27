@@ -121,7 +121,7 @@ function renderListFavorite(cockails) {
         "https://via.placeholder.com/210x295/ffffff/666666/?text=TV"
       );
     }
-    deleteElement.setAttribute("class", "fa-regular fa-star delete-x");
+    deleteElement.setAttribute("class", " fa-regular fa-trash-can delete-x");
     titleElement.setAttribute("class", "titlecocktails");
     imgElement.setAttribute("class", "imgcocktails");
     liElement.setAttribute("class", "listcoktails ");

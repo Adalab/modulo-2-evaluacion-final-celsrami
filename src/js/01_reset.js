@@ -1,5 +1,6 @@
 /* eslint-disable quotes */
 "use strict";
+
 const reset = document.querySelector(".js-reset");
 
 function handleClickReset(ev) {
@@ -11,6 +12,7 @@ function handleClickReset(ev) {
   ulList.innerHTML = "";
   ulFavorite.innerHTML = "";
   input.value = "";
+  cockailsFavorite = [];
   handleClickSearch(ev);
 
   for (const element of prueba) {
