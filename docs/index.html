@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Título</title>
+    <!-- Google Fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">all the cocktails</h1>
+    </header>
+
+    <main class="main">
+      <section class="hero"></section>
+      <section class="search">
+        <form class="search__form">
+          <label class="search__title" for="search"
+            >Do you want to look for a cocktail?
+          </label>
+
+          <input
+            class="search__input js-input"
+            type="text"
+            placeholder="search cocktail"
+            id="search"
+          />
+          <div>
+            <button class="search__btn js-search">Search</button>
+            <button class="search__btn js-reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="cocktail">
+        <article class="cocktail__list">
+          <h3 class="cocktail__title">Cocktail list</h3>
+          <ul class="cocktail__list__ul js-ul"></ul>
+        </article>
+
+        <article class="cocktail__favorite">
+          <h3 class="cocktail__titlefavorite">Favorite Cocktails</h3>
+          <ul class="favoritelist__ul js-ul-favorite"></ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
